@@ -1,7 +1,13 @@
 view: products {
   sql_table_name: demo_db.products ;;
   drill_fields: [id]
-
+  dimension: artist_name {
+    link: {
+      label: "Google"
+      url: "http://www.google.com/search?q={{ value }}"
+      icon_url: "http://google.com/favicon.ico"
+    }
+  }
   dimension: id {
     primary_key: yes
     type: number
@@ -14,7 +20,9 @@ view: products {
   dimension: category {
     type: string
     sql: ${TABLE}.category ;;
+
   }
+
   dimension: department {
     type: string
     sql: ${TABLE}.department ;;
