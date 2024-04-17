@@ -8,7 +8,7 @@ view: users {
     sql: ${TABLE}.id ;;
     link: {
       label: "liquid practice"
-      url: "https://gcpl240.cloud.looker.com/explore/dhaveen_looker/order_items?qid=D2QaFuhLtGzuRnPchofKmX"
+      url: "https://gcpl240.cloud.looker.com/explore/dhaveen_looker/order_items?q={{ value }}"
     }
   }
   dimension: age {
