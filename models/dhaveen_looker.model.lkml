@@ -95,11 +95,7 @@ explore: incremental_pdts_test {}
 explore: ints {}
 
 explore: inventory_items {
-  join: products {
-    type: left_outer
-    sql_on: ${inventory_items.product_id} = ${products.id} ;;
-    relationship: many_to_one
-  }
+
 }
 
 explore: orders {
@@ -129,11 +125,7 @@ explore: order_items {
     relationship: many_to_one
   }
 
-  join: products {
-    type: left_outer
-    sql_on: ${inventory_items.product_id} = ${products.id} ;;
-    relationship: many_to_one
-  }
+
 }
 
 explore: order_items_vijaya {
@@ -155,11 +147,7 @@ explore: order_items_vijaya {
     relationship: many_to_one
   }
 
-  join: products {
-    type: left_outer
-    sql_on: ${inventory_items.product_id} = ${products.id} ;;
-    relationship: many_to_one
-  }
+
 }
 
 explore: order_status_vijaya {}
@@ -172,7 +160,7 @@ explore: persons {}
 
 explore: persons2 {}
 
-explore: products {}
+
 
 explore: salary {
   join: dept {
