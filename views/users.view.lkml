@@ -6,6 +6,10 @@ view: users {
     primary_key: yes
     type: number
     sql: ${TABLE}.id ;;
+    link: {
+      label: "liquid practice"
+      url: "https://gcpl240.cloud.looker.com/explore/dhaveen_looker/order_items?qid=D2QaFuhLtGzuRnPchofKmX"
+    }
   }
   dimension: age {
     type: number
@@ -57,15 +61,15 @@ view: users {
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [
-	id,
-	first_name,
-	last_name,
-	events.count,
-	orders.count,
-	saralooker.count,
-	sindhu.count,
-	user_data.count
-	]
+  id,
+  first_name,
+  last_name,
+  events.count,
+  orders.count,
+  saralooker.count,
+  sindhu.count,
+  user_data.count
+  ]
   }
 
 }
